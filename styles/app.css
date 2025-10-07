@@ -1,0 +1,38 @@
+@import url(normalize.css);
+@import url(grid.css);
+@import url(fonts.css);
+
+
+/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&
+            - variables -
+%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%& */
+:root{
+
+    --text-color: #333333 ;
+    --primary-color: #11beed ;
+    --shadow-color: #13B6ff24 ;
+    --app-bg: #ffffff ;
+    --section-bg-color: #ffffff ;
+
+    --font-regular: "Poppins-Regular", Arial,  sans-serif;
+    --font-bold:  "Poppins-Bold", Arial,  sans-serif;
+    --font-black: "Poppins-Black", Arial,  sans-serif;
+}
+
+/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&
+    - mobile to desktop code -
+%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%& */
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: var(--font-regular);
+}
+
+/* %&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&
+            - header top -
+%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%& */
