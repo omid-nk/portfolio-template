@@ -1,0 +1,114 @@
+/* &%&%&%&%&%&%&%&&%&&%&%&%&%&%&&%&%&%&%&
+
+    320px to 480px styles
+
+%&%&%&&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+
+@media (min-width:320px) {
+    .container {
+        max-width: 300px;
+    }
+
+}
+
+/* &%&%&%&%&%&%&%&&%&&%&%&%&%&%&&%&%&%&%&
+
+    480px to 600px styles
+
+%&%&%&&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+
+@media (min-width:480px) {
+    .container {
+          max-width: 420px;
+      }
+
+}
+    
+/* &%&%&%&%&%&%&%&&%&&%&%&%&%&%&&%&%&%&%&
+
+    600px to 801px styles
+
+%&%&%&&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+
+@media (min-width:600px) {
+    .container {
+        max-width: 540px;
+    }
+
+    /* display none burger btn and cover */
+    .burger-btn{
+        display: none;
+    }
+    .cover--active{
+        display: none;
+    }
+
+    /* change nav to horizontal layout */
+    .nav__list{
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        justify-content: space-between;
+        background: transparent;
+        gap: 2rem;
+        height: auto;
+    }
+    .nav__item:last-child{
+        margin-bottom: 0;
+    }
+    .nav__item:first-child{
+        margin-top: 0;
+    }
+
+}
+
+/* &%&%&%&%&%&%&%&&%&&%&%&%&%&%&&%&%&%&%&
+
+    801px to 1025px styles
+
+%&%&%&&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+
+@media (min-width:801px) {
+    .container {
+        max-width: 720px;
+    }
+    /* change header size */
+    .nav{
+        height: 12rem;
+    }
+    .logo{
+        font-size: 5rem;
+    }
+    .nav__list{
+        gap: 4rem;
+    }
+
+}
+
+/* &%&%&%&%&%&%&%&&%&&%&%&%&%&%&&%&%&%&%&
+
+    1025px to 1281px styles
+
+%&%&%&&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+
+@media (min-width:1025px) {
+    .container{
+        max-width: 960px;
+    }
+
+}
+
+/* &%&%&%&%&%&%&%&&%&&%&%&%&%&%&&%&%&%&%&
+
+    1281px and above styles    
+
+%&%&%&&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+
+@media (min-width:1281px) {
+    .container {
+        max-width: 1200px;
+    }
+    
+}
