@@ -441,6 +441,7 @@ img{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    position: relative;
     padding: 1.2rem;
     flex: 1 1 20rem;
     min-width: 32rem;
@@ -450,7 +451,22 @@ img{
     gap: 1rem;
 }
 
+.service-box::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 15rem;
+    opacity: 0.1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../images/shapes/services-shape.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
+}
 .services-box__title{
     font-size: 2.4rem;
 }
