@@ -85,6 +85,32 @@
         gap: 4rem;
     }
 
+    .hero-section{
+        flex-direction: row;
+    }
+    .hero-section__left{
+        text-align: left;
+    }
+    .hero-section__btns{
+        justify-content: flex-start;
+    }
+    .about-us-header{
+        margin-top: 12rem;
+    }
+    .about-us-header__title{
+        font-size: 3.6rem;
+    }
+    .about-us-box{
+        flex-direction: row;
+    }
+    .about-us__img{
+        height: 100%;
+        width: 50%;
+    }
+    .about-us-box__info{
+        width: 50%;
+        
+    }
 }
 
 /* &%&%&%&%&%&%&%&&%&&%&%&%&%&%&&%&%&%&%&
@@ -97,7 +123,28 @@
     .container{
         max-width: 960px;
     }
+    .hero-section{
+        margin-top: 10rem;
+    }
+    .hero-section__Job-title{
+        font-size: 4rem;
+    }
+    .hero-section__hire-btn{
+        padding: 1.2rem 5rem;
+    }
+    .hero-section__resume-btn{
+        padding: 1.2rem 4rem;
+    }
+    .about-us-header{
+        margin-top: 14rem;
+    }
+    .about-us__hire-btn{
+    padding: 1rem 5rem;
+    }
 
+    .abou-us__resume-btn{
+    padding: 1rem 4rem;
+    }
 }
 
 /* &%&%&%&%&%&%&%&&%&&%&%&%&%&%&&%&%&%&%&
@@ -110,5 +157,16 @@
     .container {
         max-width: 1200px;
     }
-    
+    .hero-section{
+        margin-top: 15rem;
+    }
+    .hero-section__Job-title{
+        font-size: 5rem;
+    }
+    .about-us-header{
+        margin-top: 16rem;
+    }
+    .about-us-box__info{
+        padding: 0 4rem;
+    }
 }

@@ -12,7 +12,8 @@
     --font-bold: 'Poppins-Bold', sans-serif;
     --font-black: 'Poppins-Black', sans-serif;
     --color-primary: #0ABEAD;
-    --color-background: #f5f5f5;
+    --color-secondary: #F57F17;
+    --color-background: #ffffff;
     --color-text: #333;
 }
 
@@ -77,7 +78,8 @@ img{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #0000000f;
+    background-color: #00000005;
+    backdrop-filter: blur(4px);
 }
 
 
@@ -88,7 +90,7 @@ img{
 %&%&%&&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
 
 .header{
-    background-color: white;
+    background-color: var(--color-background);
     box-shadow: 0 3px 59px rgba(4,195,255,0.16);
     position: sticky;
     top: 0;
@@ -120,12 +122,13 @@ img{
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    top: 100%;
+    top: 110%;
     left: 2rem;
     right: 2rem;
     height: 0;
     gap: 1.5rem;
-    background-color: white;
+    background-color: var(--color-background);
+    border-radius: 1rem;
     overflow: hidden;
     transition: all 0.2s ease ;
     z-index: 999;
@@ -201,3 +204,201 @@ img{
     Hero section styles
 
 %&%&%&&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    margin-top: 4rem;
+    gap: 4rem;
+}
+
+.hero-section__left{
+    max-width: 50rem;
+    text-align: center;
+}
+
+.hero-section__name{
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+.hero-section__name > span{
+    color: var(--color-secondary);
+}
+
+.hero-section__Job-title{
+    font-family: var(--font-bold);
+    font-size: 3rem;
+    color: var(--color-primary);
+}
+
+.hero-section__skills{
+    color: var(--color-text);
+    font-size: 1.6rem;
+}
+
+/* hero section btns */
+.hero-section__btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.hero-section__hire-btn{
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    padding: 1rem 3rem;
+    border-radius: 3rem ;
+    box-shadow: 0 16px 30px #0BBEAD29;
+}
+.hero-section__resume-btn{
+    background-color: var(--color-secondary);
+    color: var(--color-background);
+    padding: 1rem 3rem;
+    border-radius: 3rem ;
+    box-shadow: 0 16px 30px #F57F1729;
+    
+}
+
+/* hero section image */
+.hero-section__right{
+    max-width: 50rem;
+}
+
+.hero-section__profile-pic{
+    object-fit: cover;
+    object-position: 70%;
+    border-radius: 50%;
+    border: 10px solid var(--color-background);
+    box-shadow: 0 16px 30px #0BBEAD29;
+}
+
+
+/* &%&%&%&%&%&%&%&&%&&%&%&%&%&%&&%&%&%&%&
+
+    about us section styles
+
+%&%&%&&%&%&%&%&%&%&%&%&%&%&%&%&%&%&%&% */
+
+/* about us header */
+
+.about-us-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-top: 6rem;
+}
+
+.about-us-header__title{
+    color: var(--color-primary);
+    font-family: var(--font-bold);
+    font-size: 3.2rem;
+}
+.about-us-header__caption{
+    color: var(--color-text);
+    font-size: 1.6rem;
+}
+.about-us-header__border{
+    position: relative;
+    width: 20rem;
+    height: 0.2rem;
+    background-color: var(--color-primary);
+    border-radius: 1rem;
+    margin-top: 1.8rem;
+}
+.about-us-header__border::after{
+    content: "";
+    position: absolute;
+    top: -0.3rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 6rem;
+    height: 0.8rem;
+    background-color: var(--color-primary);
+    border-radius: 1rem;
+    margin: 0 auto;
+}
+
+/* about us box */
+.about-us-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    box-shadow: 0 0 59px #60E9FF59 ;
+}
+.about-us__img{
+    width: 100%;
+}
+.about-us__img > img{
+    width: 100%;
+}
+
+.about-us-box__info{
+    padding: 2rem;
+}
+
+.about-us-box__title{
+    font-family: var(--font-primary);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.about-us-box__caption{
+    font-size: 1.4rem;
+}
+
+.about-us-box__bottom-sectiion{
+    margin-top: 2rem;
+}
+
+.about-us-box__title-list{
+    color: var(--color-primary);
+    font-size: 1.8rem;
+}
+
+.about-us-box__list-items{
+    list-style: disc;
+    list-style-position: inside;
+    
+}
+.about-us-box__list-items > li::marker{
+    color: var(--color-secondary);
+}
+
+.about-us-box__list-item{
+    font-size: 1.4rem;
+}
+
+.about-us__btns{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.about-us__hire-btn{
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    padding: 0.8rem 2rem;
+    border-radius: 4rem;
+    box-shadow: 0 16px 30px #0BBEAD29;
+}
+
+.abou-us__resume-btn{
+    background-color: var(--color-secondary);
+    color: var(--color-background);
+    padding: 0.8rem 2rem;
+    border-radius: 4rem;
+    box-shadow: 0 16px 30px #F57F1729;
+}
+
